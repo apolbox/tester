@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+#
+# Fungsi untuk membuat symbolik link
+#
+create()
+{
+	TARGET=${1}
+	LINK_NAME=${2}
+	if ! [ $(ln -s ${TARGET} ${LINK_NAME}) ]; then
+		echo "Sukses"
+	else
+		echo "Failed"
+	fi
+}
