@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+#
+source library/createlink
+
+echo -ne "Direktori target: "; read target
+echo -ne "Direktori link name: "; read link_name
+
+create $target $link_name
